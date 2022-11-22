@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.loan-calculator {
+  width: 600px;
+  margin: 2em auto;
+  background: #e6e5e5;
+  box-shadow: 0 4px 8px 4px rgba (0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: #000;
+  overflow: hidden;
+}
+
+.loan-calculator .top {
+  background: #2e2e2e;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.loan-calculator .top h2 {
+  margin-top: 0;
+}
+
+.loan-calculator .top form {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.loan-calculator .top form input {
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.loan-calculator .title {
+  margin: 1rem 0;
+}
+
+.loan-calculator .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loan-calculator .result .left {
+  width: 100%;
+  padding: 2rem 2rem;
+}
+
+.loan-calculator .left h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.loan-calculator .result .value {
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.loan-calculator .result .value::before {
+  content: "₹";
+  font-size: 24px;
+  font-weight: 400;
+  margin-right: 1rem;
+  opacity: 0.4;
+}
+
+.loan-calculator .calculate-btn {
+  background: #ec1c24;
+  color: #fff;
+  box-shadow: 0 9px #999;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 3rem 0;
+}
+
+.user__info h2 {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+#username {
+  text-transform: capitalize;
+}
+
+#panNum {
+  text-transform: uppercase;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  background-color: #2e2e2e;
+  border: 2px solid #2e2e2e;
+  box-shadow: 0 9px #999;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.loan-calculator .right {
+  width: 50%;
+}
+
+/* //////////////////////////////////// */
+/* CSS for 2nd page */
+.container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: #2e2e2e;
+  margin: 5rem;
+  width: 500px;
+  padding: 1rem;
+}
+
+@media (max-width: 650px) {
+  .loan-calculator {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .loan-calculator .top form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .loan-calculator .result {
+    flex-direction: column;
+    text-align: center;
+  }
+}
